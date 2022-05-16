@@ -25,6 +25,8 @@ function onStartChangeColor() {
     if (setInterval) {
         refs.btnStart.setAttribute('disabled', 'disabled');
         refs.btnStop.removeAttribute('disabled', 'disabled');
+        // refs.btnStart.disabled=true;
+        // refs.btnStop.disabled = false;
     }
     changeColor = setInterval(() => {
         refs.body.style.backgroundColor = getRandomHexColor();
@@ -37,6 +39,8 @@ function onStopChangeColor() {
         clearInterval(changeColor);
         refs.btnStart.removeAttribute('disabled', 'disabled');
         refs.btnStop.setAttribute('disabled', 'disabled');
+        // refs.btnStart.disabled = false;
+        // refs.btnStop.disabled = true;
         
     }
     
