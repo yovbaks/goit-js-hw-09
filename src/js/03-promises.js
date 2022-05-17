@@ -18,6 +18,7 @@ function onFormSubmit (event) {
 function onBtnClick(event) {
   event.preventDefault()
   Promise.all(amountPromis(formData))
+  
 }
 
 function amountPromis(obj) {

@@ -75,6 +75,7 @@ function onClickbtnStart() {
     const time = convertMs(deltaTime);
     updateClockFace(time);
   }, 1000);
+  refs.btnStart.disabled = true;
 }
 
 function onClickbtnStop() {
